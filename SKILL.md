@@ -1,14 +1,15 @@
 ---
-openclaw:
-  emoji: 📸
-  requires:
-    bins:
-      - node
-      - python3
-    config:
-      - clawimig_dir
-  install: |
-    cd "$clawimig_dir/scripts" && npm install && pip install -r requirements.txt
+name: clawimig
+description: >-
+  Process a directory of images for Instagram using sharp (resize/crop/pad) and pilgram (Instagram filters). Reads a `config.json` and writes processed images to an output directory.
+metadata:
+  {
+    "openclaw":
+      {
+        "emoji": "📸",
+        "requires": { "bins": ["node", "python3"] },
+      },
+  }
 ---
 
 # clawimig — Instagram Image Pipeline

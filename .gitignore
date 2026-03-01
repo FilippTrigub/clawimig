@@ -12,9 +12,11 @@ __pycache__/
 .venv/
 venv/
 
-# User data directories
-input/
-output/
+# User data directories — keep dirs, ignore contents
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
 
 # Planning / session notes
 PLAN.md
